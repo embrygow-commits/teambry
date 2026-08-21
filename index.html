@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Embry — Roster</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #070707;
+            --bg-secondary: #0d0d0d;
+            --panel: #111111;
+            --panel-hover: #181818;
+            --red: #d71920;
+            --red-dark: #7d080d;
+            --text: #f2f2f2;
+            --muted: #777;
+            --border: rgba(255,255,255,.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 50% -20%, rgba(215,25,32,.18), transparent 45%),
+                linear-gradient(180deg, #090909 0%, #050505 100%);
+            color: var(--text);
+            font-family: 'Rajdhani', sans-serif;
+            min-height: 100vh;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            border-bottom: 1px solid var(--border);
+            background: rgba(5,5,5,.92);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(12px);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .brand-mark {
+            width: 42px;
+            height: 42px;
+            border: 2px solid var(--red);
+            display: grid;
+            place-items: center;
+            transform: rotate(45deg);
+            box-shadow: 0 0 20px rgba(215,25,32,.25);
+        }
+
+        .brand-mark span {
+            transform: rotate(-45deg);
+            font-family: 'Barlow Condensed';
+            font-weight: 900;
+            font-size: 18px;
+        }
+
+        .brand h1 {
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .brand small {
+            display: block;
+            color: var(--red);
+            font-size: 10px;
+            letter-spacing: 3px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 2px;
+            transition: .2s;
+        }
+
+        nav a:hover {
+            color: var(--red);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 430px;
+            padding: 100px 7% 70px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "EMBRY";
+            position: absolute;
+            right: -40px;
+            bottom: -80px;
+            font-family: 'Barlow Condensed';
+            font-size: 260px;
+            font-weight: 900;
+            color: rgba(255,255,255,.025);
+            letter-spacing: -10px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .eyebrow {
+            color: var(--red);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-family: 'Barlow Condensed';
+            font-size: clamp(70px, 10vw, 150px);
+            line-height: .78;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: -3px;
+        }
+
+        .hero h2 span {
+            color: var(--red);
+        }
+
+        .hero p {
+            margin-top: 30px;
+            max-width: 620px;
+            color: #888;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        /* =========================
+           ROSTER
+        ========================= */
+
+        .roster {
+            padding: 30px 7% 100px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            margin-bottom: 45px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        .section-header h3 {
+            font-family: 'Barlow Condensed';
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-header p {
+            color: var(--muted);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* =========================
+           CATEGORY
+        ========================= */
+
+        .category {
+            margin-bottom: 55px;
+        }
+
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .category-title::before {
+            content: "";
+            width: 4px;
+            height: 32px;
+            background: var(--red);
+            box-shadow: 0 0 15px rgba(215,25,32,.5);
+        }
+
+        .category-title h4 {
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .category-title span {
+            color: #555;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        /* =========================
+           PLAYER CARDS
+        ========================= */
+
+        .players {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .player {
+            position: relative;
+            min-height: 250px;
+            background:
+                linear-gradient(145deg, rgba(255,255,255,.04), transparent 45%),
+                var(--panel);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: .3s ease;
+        }
+
+        .player:hover {
+            transform: translateY(-5px);
+            border-color: rgba(215,25,32,.5);
+            background: var(--panel-hover);
+            box-shadow: 0 15px 40px rgba(0,0,0,.5);
+        }
+
+        .player::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--red);
+            top: 0;
+            left: -100%;
+            transition: .4s;
+        }
+
+        .player:hover::before {
+            left: 0;
+        }
+
+        .player-number {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-family: 'Barlow Condensed';
+            font-size: 65px;
+            font-weight: 900;
+            color: rgba(255,255,255,.035);
+        }
+
+        .avatar {
+            height: 145px;
+            display: grid;
+            place-items: center;
+            background:
+                radial-gradient(circle, rgba(215,25,32,.18), transparent 60%),
+                #0a0a0a;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .avatar span {
+            font-family: 'Barlow Condensed';
+            font-weight: 900;
+            font-size: 55px;
+            color: #222;
+        }
+
+        .player-info {
+            padding: 17px;
+        }
+
+        .player-name {
+            font-family: 'Barlow Condensed';
+            font-size: 27px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .player-role {
+            margin-top: 4px;
+            color: var(--red);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .player-game {
+            margin-top: 8px;
+            color: #555;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 30px 7%;
+            display: flex;
+            justify-content: space-between;
+            color: #444;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        footer strong {
+            color: var(--red);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1000px) {
+            .players {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 0 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero,
+            .roster {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .hero {
+                min-height: 350px;
+            }
+
+            .hero h2 {
+                font-size: 75px;
+            }
+
+            .players {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                display: block;
+            }
+
+            .section-header p {
+                margin-top: 8px;
+            }
+
+            footer {
+                padding: 25px 20px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+
+        <div class="brand-mark">
+            <span>E</span>
+        </div>
+
+        <div>
+            <h1>Embry</h1>
+            <small>Gears Community</small>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="#">Roster</a>
+        <a href="#">Plays</a>
+        <a href="#">Montages</a>
+        <a href="#">Discord</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            Embry // Roster
+        </div>
+
+        <h2>
+            The<br>
+            <span>Roster</span>
+        </h2>
+
+        <p>
+            Conheça os membros que fazem parte do Embry.
+            Jogadores, criadores e membros da comunidade reunidos
+            em torno de Gears of War.
+        </p>
+
+    </div>
+
+</section>
+
+
+<main class="roster">
+
+    <div class="section-header">
+
+        <div>
+            <h3>Members</h3>
+        </div>
+
+        <p>
+            Embry Community // 2026
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         STAFF
+    ========================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+            <h4>Leadership</h4>
+            <span>01 — Staff</span>
+        </div>
+
+        <div class="players">
+
+            <article class="player">
+
+                <div class="player-number">01</div>
+
+                <div class="avatar">
+                    <span>C</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Cyberz</div>
+                    <div class="player-role">Founder / Creator</div>
+                    <div class="player-game">Gears of War</div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PLAYERS
+    ========================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+            <h4>Players</h4>
+            <span>02 — Roster</span>
+        </div>
+
+        <div class="players">
+
+            <article class="player">
+
+                <div class="player-number">02</div>
+
+                <div class="avatar">
+                    <span>01</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Player 01</div>
+                    <div class="player-role">Slayer</div>
+                    <div class="player-game">Gears of War</div>
+                </div>
+
+            </article>
+
+
+            <article class="player">
+
+                <div class="player-number">03</div>
+
+                <div class="avatar">
+                    <span>02</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Player 02</div>
+                    <div class="player-role">Support</div>
+                    <div class="player-game">Gears of War</div>
+                </div>
+
+            </article>
+
+
+            <article class="player">
+
+                <div class="player-number">04</div>
+
+                <div class="avatar">
+                    <span>03</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Player 03</div>
+                    <div class="player-role">Objective</div>
+                    <div class="player-game">Gears of War</div>
+                </div>
+
+            </article>
+
+
+            <article class="player">
+
+                <div class="player-number">05</div>
+
+                <div class="avatar">
+                    <span>04</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Player 04</div>
+                    <div class="player-role">Flex</div>
+                    <div class="player-game">Gears of War</div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CREATORS
+    ========================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+            <h4>Creators</h4>
+            <span>03 — Media</span>
+        </div>
+
+        <div class="players">
+
+            <article class="player">
+
+                <div class="player-number">06</div>
+
+                <div class="avatar">
+                    <span>YT</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Creator 01</div>
+                    <div class="player-role">Content Creator</div>
+                    <div class="player-game">Gears / Media</div>
+                </div>
+
+            </article>
+
+
+            <article class="player">
+
+                <div class="player-number">07</div>
+
+                <div class="avatar">
+                    <span>ED</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Editor 01</div>
+                    <div class="player-role">Video Editor</div>
+                    <div class="player-game">Embry Media</div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COMMUNITY
+    ========================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+            <h4>Community</h4>
+            <span>04 — Members</span>
+        </div>
+
+        <div class="players">
+
+            <article class="player">
+
+                <div class="player-number">08</div>
+
+                <div class="avatar">
+                    <span>CM</span>
+                </div>
+
+                <div class="player-info">
+                    <div class="player-name">Member 01</div>
+                    <div class="player-role">Community</div>
+                    <div class="player-game">Gears of War</div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>EMBRY</strong> // Gears Community
+    </div>
+
+    <div>
+        Est. 2026
+    </div>
+
+</footer>
+
+</body>
+</html>
