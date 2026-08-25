@@ -1,334 +1,569 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EMBRY // GEARS COMMUNITY</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
 <div class="grain"></div>
 <div class="scanline"></div>
 
-<!-- ============ NAV ============ -->
+<!-- ============ HEADER ============ -->
 <header>
-<nav>
-<div class="logo-mark">
-<img src="assets/Embrylogo.png" alt="EMBRY" width="34" height="34" style="object-fit:contain;">
-<span>EMB<b>RY</b></span>
-</div>
-<div class="nav-links">
-<a href="#origem">Origem</a>
-<a href="#roster">Roster</a>
-<a href="#channels">Channels</a>
-<a href="#community">Community</a>
-</div>
-<a href="#channels" class="nav-cta">Our Channels</a>
-</nav>
+  <nav>
+    <a href="#" class="logo-mark">
+      <img src="assets/Embrylogo.png" alt="EMBRY" style="width:32px;height:32px;object-fit:contain;">
+      <span>EMBRY<b>//</b>GOW</span>
+    </a>
+    <div class="nav-links">
+      <a href="#origem" data-i18n="nav.origin">Origem</a>
+      <a href="#roster" data-i18n="nav.roster">Roster</a>
+      <a href="#channels" data-i18n="nav.channels">Canais</a>
+      <a href="#community" data-i18n="nav.community">Comunidade</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <!-- LANGUAGE SWITCHER -->
+      <div class="lang-switcher" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="pt" aria-label="Português">
+          <span class="flag"></span>🇧🇷 PT-BR
+        </button>
+        <button class="lang-btn" data-lang="es" aria-label="Español Mexicano">
+          <span class="flag flag-mx"></span>🇲🇽 MX
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English">
+          <span class="flag flag-en"></span>🇺🇸 EN-US
+        </button>
+      </div>
+      <a href="#roster" class="nav-cta" data-i18n="nav.cta">Ver Roster</a>
+    </div>
+  </nav>
 </header>
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-<div class="grid-overlay"></div>
-<img class="hero-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-
-<div class="hero-content">
-<div class="eyebrow">EMBRY // GEARS COMMUNITY</div>
-<h1>WE ARE<br><b>EMBRY</b></h1>
-<p class="hero-sub">Organização brasileira de Gears of War. Competição, conteúdo e comunidade sob uma única bandeira — construída na linha de frente, jogo após jogo.</p>
-<div class="hero-actions">
-<a href="#roster" class="btn btn-primary">View Roster</a>
-<a href="#channels" class="btn btn-ghost">Our Channels</a>
-</div>
-<div class="hero-stats">
-<div><div class="num">05</div><div class="lbl">Competitive</div></div>
-<div><div class="num">02</div><div class="lbl">Content Units</div></div>
-<div><div class="num">01</div><div class="lbl">Community Media</div></div>
-<div><div class="num">BR</div><div class="lbl">Est. Squad</div></div>
-</div>
-</div>
+  <div class="grid-overlay"></div>
+  <img src="assets/Embrylogo.png" alt="" class="hero-emblem">
+  <div class="hero-content">
+    <div class="eyebrow" data-i18n="hero.eyebrow">Organização Brasileira de Gears of War</div>
+    <h1>
+      <span data-i18n="hero.title1">WE ARE</span><br>
+      <b>EMBRY</b>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">
+      Organização brasileira de Gears of War. Competição, conteúdo e comunidade sob uma única bandeira — construída na linha de frente, jogo após jogo.
+    </p>
+    <div class="hero-actions">
+      <a href="#roster" class="btn btn-primary" data-i18n="hero.btn1">Ver Roster</a>
+      <a href="#channels" class="btn btn-ghost" data-i18n="hero.btn2">Nossos Canais</a>
+    </div>
+    <!--<div class="hero-stats">
+      <div>
+        <div class="num">2013</div>
+        <div class="lbl" data-i18n="hero.stat1">Fundado em</div>
+      </div>
+      <div>
+        <div class="num">02</div>
+        <div class="lbl" data-i18n="hero.stat2">Unidades de Conteúdo</div>
+      </div>
+      <div>
+        <div class="num">01</div>
+        <div class="lbl" data-i18n="hero.stat3">Mídia da Comunidade</div>
+      </div>
+      <div>
+        <div class="num">BR</div>
+        <div class="lbl" data-i18n="hero.stat4">Squad Fundador</div>
+      </div>
+    </div>--->
+  </div>
 </section>
 
 <!-- ============ ORIGIN ============ -->
-<section class="origin" id="origem">
-<div class="container">
-<div class="origin-grid">
-<div class="origin-text">
-<div class="eyebrow" style="margin-bottom:22px;">EMBRY // ORIGIN</div>
-<h2>O que significa <b>EMBRY</b></h2>
-<p>O nome vem de <strong>Nassar Embry</strong>, o Allfather Prime que uniu a Coalizão em um dos momentos mais críticos da história de Sera. Seu legado deu origem à <strong>Embry Star</strong> — a mais alta honraria que um soldado da COG pode receber, concedida apenas para quem age com bravura muito além do que o dever exige.</p>
-<p>É esse o padrão que a organização carrega no nome: liderança, união e a exigência de ir além do esperado. Cada jogador, criador e membro da EMBRY representa esse mesmo compromisso — competir com a mentalidade de quem busca a mais alta honra, dentro e fora de campo.</p>
-</div>
-<div class="origin-panel">
-<div class="origin-medal">
-<img src="assets/embrystar-medal.png" alt="Embry Star">
-</div>
-<div class="panel-label">// KEYWORDS</div>
-<div class="origin-tags">
-<span>Nassar Embry</span>
-<span>Embry Star</span>
-<span>Honra</span>
-<span>Liderança</span>
-<span>União</span>
-</div>
-<div class="origin-divider"></div>
-<div class="origin-quote">"A mais alta honra pertence a quem vai <span>além do dever.</span>"</div>
-</div>
-</div>
-</div>
+<section id="origem" class="origin">
+  <div class="container">
+    <div class="origin-grid">
+      <div class="origin-text">
+        <div class="eyebrow" data-i18n="origin.eyebrow">EMBRY // ORIGEM</div>
+        <h2>
+          <span data-i18n="origin.title1">O que significa</span> <b>EMBRY</b>
+        </h2>
+        <p data-i18n="origin.p1">
+          O nome vem de <strong>Nassar Embry</strong>, o Allfather Prime que uniu a Coalizão em um dos momentos mais críticos da história de Sera. Seu legado deu origem à <strong>Embry Star</strong> — a mais alta honraria que um soldado da COG pode receber, concedida apenas para quem age com bravura muito além do que o dever exige.
+        </p>
+        <p data-i18n="origin.p2">
+          É esse o padrão que a organização carrega no nome: liderança, união e a exigência de ir além do esperado. Cada jogador, criador e membro da EMBRY representa esse mesmo compromisso — competir com a mentalidade de quem busca a mais alta honra, dentro e fora de campo.
+        </p>
+      </div>
+      <div class="origin-panel">
+    
+        <div class="origin-medal">
+          <img src="assets/embrystar-medal.png" alt="Embry Star">
+        </div>
+        <div class="player-role">
+         <p>No universo da franquia de jogos Gears of War, a Estrela Embry (Embry Star) é a maior condecoração militar que um soldado da Coalition of Ordered Governments (COG) pode receber</p>
+        </div>
+        <div class="origin-divider"></div>
+        <div class="origin-quote">
+          "<span data-i18n="origin.quote">A mais alta honra pertence a quem vai além do dever.</span>"
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============ ROSTER ============ -->
 <section id="roster">
-<div class="container">
-<div class="sec-head">
-<h2>The Roster</h2>
-<p>Cinco frentes, uma só organização. Conheça quem representa a EMBRY dentro e fora de campo.</p>
-</div>
+  <div class="container">
+    <div class="sec-head">
+      <h2 data-i18n="roster.title">The Roster</h2>
+      <p data-i18n="roster.sub">
+        Competição, highlights e comunidade. Conheça quem representa a EMBRY dentro e fora de campo.
+      </p>
+    </div>
 
-\<!-- 01 COMPETITIVE -->
-\<div class="roster-group">
-  \<div class="group-head">
-    \<span class="group-index">01 //\</span>
-    \<span class="group-title">Embry Competitive\</span>
-    \<span class="group-tag">Competitive\</span>
-  \</div>
-  \<div class="card-grid">
-    \<!-- template card repeated -->
-    \<div class="player-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">SILLVER\</div>
-      \<div class="player-role">Competitive Player\</div>
-      \<div class="card-socials">
-        \<a href="#" aria-label="Twitter">\<svg viewBox="0 0 24 24">\<path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>\</svg>\</a>
-        \<a href="#" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>\</svg>\</a>
-        \<a href="#" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-      \</div>
-    \</div>
+    <!-- 01 // COMPETITIVE -->
+    <div class="roster-group">
+      <div class="group-head">
+        <span class="group-index">01 //</span>
+        <span class="group-title">Embry Competitive</span>
+        <span class="group-tag" data-i18n="roster.competitive.tag">Competitivo</span>
+      </div>
 
-    \<div class="player-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">STRAAFES\</div>
-      \<div class="player-role">Competitive Player\</div>
-      \<div class="card-socials">
-        \<a href="#" aria-label="Twitter">\<svg viewBox="0 0 24 24">\<path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>\</svg>\</a>
-        \<a href="#" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>\</svg>\</a>
-        \<a href="#" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-      \</div>
-    \</div>
+      <div class="roster-subgroup">
+        <div class="subgroup-head">
+          <span class="subgroup-title" data-i18n="roster.mainLine">Linha Principal</span>
+          <span class="subgroup-tag" data-i18n="roster.primaryTeam">Time Principal</span>
+        </div>
+        <div class="card-grid">
+          <div class="player-card">
+            <span class="card-status"></span>
+            <img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
+            <div class="player-name">Embry Twxsts</div>
+            <div class="player-role" data-i18n="roster.mainLine">Linha Principal</div>
+            <div class="card-socials">
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></a>
+              <a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+            </div>
+          </div>
+          <div class="player-card">
+            <span class="card-status"></span>
+            <img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
+            <div class="player-name">Embry Turkizh</div>
+            <div class="player-role" data-i18n="roster.mainLine">Linha Principal</div>
+            <div class="card-socials">
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+              <a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+            </div>
+          </div>
+          <div class="player-card">
+            <span class="card-status"></span>
+            <img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
+            <div class="player-name">Embry Absolut</div>
+            <div class="player-role" data-i18n="roster.mainLine">Linha Principal</div>
+            <div class="card-socials">
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+              <a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+            </div>
+          </div>
 
-    \<div class="player-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">REVZ\</div>
-      \<div class="player-role">Competitive Player\</div>
-      \<div class="card-socials">
-        \<a href="#" aria-label="Twitter">\<svg viewBox="0 0 24 24">\<path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>\</svg>\</a>
-        \<a href="#" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>\</svg>\</a>
-        \<a href="#" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-      \</div>
-    \</div>
+          <div class="player-card">
+            <span class="card-status"></span>
+            <img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
+            <div class="player-name">Embry Spider</div>
+            <div class="player-role" data-i18n="roster.mainLine">Linha Principal</div>
+            <div class="card-socials">
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+              <a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="roster-subgroup">
+        <div class="subgroup-head">
+          <span class="subgroup-title" data-i18n="roster.secondLine">Linha Secundária</span>
+          <span class="subgroup-tag" data-i18n="roster.competitive.tag">Competitivo</span>
+        </div>
+        <div class="card-grid">
+          <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.lineSlot">Vaga na Linha</span></div>
+          <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.lineSlot">Vaga na Linha</span></div>
+          <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.lineSlot">Vaga na Linha</span></div>
+        </div>
+      </div>
+<br>
+      <div class="roster-subgroup">
+        <div class="subgroup-head">
+          <span class="subgroup-title" data-i18n="roster.compPlayers">Jogadores Competitivos</span>
+          <span class="subgroup-tag" data-i18n="roster.competitive.tag">Lista</span>
+        </div>
+        <div class="card-grid">
+          <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.playerSlot">Vaga de Jogador</span></div>
+          <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.playerSlot">Vaga de Jogador</span></div>
+        </div>
+      </div>
+    </div>
 
-    \<div class="player-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">WINGS\</div>
-      \<div class="player-role">Competitive Player\</div>
-      \<div class="card-socials">
-        \<a href="#" aria-label="Twitter">\<svg viewBox="0 0 24 24">\<path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>\</svg>\</a>
-        \<a href="#" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>\</svg>\</a>
-        \<a href="#" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-      \</div>
-    \</div>
+    <!-- 02 // HIGHLIGHTS -->
+    <div class="roster-group">
+      <div class="group-head">
+        <span class="group-index">02 //</span>
+        <span class="group-title">Embry Montager Highlights</span>
+        <span class="group-tag" data-i18n="roster.highlights.tag">Montage Players</span>
+      </div>
+      <div class="roster-description">
+        <p data-i18n="roster.highlights.desc">
+          Players que contribuem para o conteúdo oficial da EMBRY através de clips, highlights, plays e montages.
+        </p>
+      </div>
+      <div class="card-grid">
+        <div class="player-card">
+          <span class="card-status"></span>
+          <img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
+          <div class="player-name">Embry iCyberz</div>
+          <div class="player-role" data-i18n="roster.highlightPlayer">Membro</div>
+          <div class="card-socials">
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
+            <a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+          </div>
+        </div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.highlightPlayer">Membro/span></div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.highlightPlayer">Membro/span></div>
+      </div>
+    </div>
 
-    \<div class="player-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">RIVALITY\</div>
-      \<div class="player-role">Competitive Player\</div>
-      \<div class="card-socials">
-        \<a href="#" aria-label="Twitter">\<svg viewBox="0 0 24 24">\<path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>\</svg>\</a>
-        \<a href="#" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>\</svg>\</a>
-        \<a href="#" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-      \</div>
-    \</div>
-  \</div>
-\</div>
+    <!-- 03 // PRODUCTION -->
+    <div class="roster-group">
+      <div class="group-head">
+        <span class="group-index">03 //</span>
+        <span class="group-title">Embry Production</span>
+        <span class="group-tag" data-i18n="roster.production.tag">Mídia &amp; Editores</span>
+      </div>
+      <div class="card-grid">
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+      </div>
+    </div>
 
-\<!-- 02 CONTENT -->
-\<div class="roster-group">
-  \<div class="group-head">
-    \<span class="group-index">02 //\</span>
-    \<span class="group-title">Embry Content\</span>
-    \<span class="group-tag">Content Creators\</span>
-  \</div>
-  \<div class="card-grid">
-    \<div class="player-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">CYBERZ\</div>
-      \<div class="player-role">Content Creator\</div>
-      \<div class="card-socials">
-        \<a href="#" aria-label="YouTube">\<svg viewBox="0 0 24 24">\<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/>\</svg>\</a>
-        \<a href="#" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-        \<a href="#" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/>\</svg>\</a>
-      \</div>
-    \</div>
-  \</div>
-\</div>
+    <!-- 04 // COMMUNITY MEDIA -->
+    <div class="roster-group">
+      <div class="group-head">
+        <span class="group-index">04 //</span>
+        <span class="group-title">Embry Community Media</span>
+        <span class="group-tag" data-i18n="roster.communityMedia.tag">Comunicação</span>
+      </div>
+      <div class="card-grid">
+        <div class="player-card spider-card">
+          <span class="card-status"></span>
+          <img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
+          <div class="player-name">SPIDER</div>
+          <div class="player-role" data-i18n="roster.communityMedia.role">Mídia da Comunidade</div>
+          <div class="card-socials wrap">
+            <a href="https://youtube.com/@spidergearsbr" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
+            <a href="https://chat.whatsapp.com/FZ7i71OZnmj7JVm8ES2bYx" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2z"/></svg></a>
+            <a href="https://twitch.tv/spider_gears_br" target="_blank" rel="noopener" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+            <a href="https://tiktok.com/@spidergearsbr" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14.5 2h2.6c.16 1.2.7 2.28 1.56 3.1a5.6 5.6 0 0 0 3.34 1.4v2.7a8.3 8.3 0 0 1-4.9-1.6v7.6c0 3.4-2.75 6.15-6.15 6.15A6.15 6.15 0 0 1 4.8 15.2c0-3.28 2.55-5.96 5.77-6.14v2.75a3.4 3.4 0 0 0-1.13-.2 3.4 3.4 0 1 0 3.4 3.4V2z"/></svg></a>
+            <a href="https://facebook.com/spidergearsbr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+            <a href="https://kick.com/spider-gears-br" target="_blank" rel="noopener" aria-label="Kick"><svg viewBox="0 0 24 24"><path d="M3 3h4v6.2L12.2 3H17l-6.5 8L17 21h-4.9l-5.1-6.8V21H3z"/></svg></a>
+            <a href="https://instagram.com/spider_gears_br" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-\<!-- 03 PRODUCTION -->
-\<div class="roster-group">
-  \<div class="group-head">
-    \<span class="group-index">03 //\</span>
-    \<span class="group-title">Embry Production\</span>
-    \<span class="group-tag">Media &amp; Editors\</span>
-  \</div>
-  \<div class="card-grid">
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-  \</div>
-\</div>
-
-\<!-- 04 COMMUNITY MEDIA -->
-\<div class="roster-group">
-  \<div class="group-head">
-    \<span class="group-index">04 //\</span>
-    \<span class="group-title">Embry Community Media\</span>
-    \<span class="group-tag">Communication\</span>
-  \</div>
-  \<div class="card-grid">
-    \<div class="player-card spider-card">
-      \<span class="card-status">\</span>
-      \<img class="card-emblem" src="assets/Embrylogo.png" alt="EMBRY">
-      \<div class="player-name">SPIDER\</div>
-      \<div class="player-role">Community Media\</div>
-      \<div class="card-socials wrap">
-        \<a href="[https://youtube.com/@spidergearsbr](https://youtube.com/@spidergearsbr)" target="\_blank" rel="noopener" aria-label="YouTube">\<svg viewBox="0 0 24 24">\<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/>\</svg>\</a>
-        \<a href="[https://chat.whatsapp.com/FZ7i71OZnmj7JVm8ES2bYx](https://chat.whatsapp.com/FZ7i71OZnmj7JVm8ES2bYx)" target="\_blank" rel="noopener" aria-label="WhatsApp">\<svg viewBox="0 0 24 24">\<path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm4.53 14.14c-.2.57-1.19 1.12-1.65 1.16-.45.04-.87.2-2.93-.6-2.48-.97-4.06-3.47-4.18-3.63-.12-.16-.99-1.31-.99-2.5 0-1.19.63-1.77.85-2.02.22-.25.48-.31.64-.31h.47c.15 0 .35-.06.55.42.2.49.7 1.71.76 1.83.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.13.12-.25.25-.11.49.14.24.62 1.03 1.34 1.67.92.82 1.7 1.08 1.94 1.2.24.12.39.1.53-.06.15-.16.62-.71.78-.95.16-.24.33-.2.55-.12.22.08 1.42.67 1.66.79.24.12.4.18.46.28.06.1.06.59-.14 1.16z"/>\</svg>\</a>
-        \<a href="[https://twitch.tv/spider\_gears\_br](https://twitch.tv/spider_gears_br)" target="\_blank" rel="noopener" aria-label="Twitch">\<svg viewBox="0 0 24 24">\<path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/>\<path d="M15 7h2v5h-2zM10 7h2v5h-2z"/>\</svg>\</a>
-        \<a href="[https://tiktok.com/@spidergearsbr](https://tiktok.com/@spidergearsbr)" target="\_blank" rel="noopener" aria-label="TikTok">\<svg viewBox="0 0 24 24">\<path d="M14.5 2h2.6c.16 1.2.7 2.28 1.56 3.1a5.6 5.6 0 0 0 3.34 1.4v2.7a8.3 8.3 0 0 1-4.9-1.6v7.6c0 3.4-2.75 6.15-6.15 6.15A6.15 6.15 0 0 1 4.8 15.2c0-3.28 2.55-5.96 5.77-6.14v2.75a3.4 3.4 0 0 0-1.13-.2 3.4 3.4 0 1 0 3.4 3.4V2z"/>\</svg>\</a>
-        \<a href="[https://facebook.com/spidergearsbr](https://facebook.com/spidergearsbr)" target="\_blank" rel="noopener" aria-label="Facebook">\<svg viewBox="0 0 24 24">\<path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/>\</svg>\</a>
-        \<a href="[https://kick.com/spider-gears-br](https://kick.com/spider-gears-br)" target="\_blank" rel="noopener" aria-label="Kick">\<svg viewBox="0 0 24 24">\<path d="M3 3h4v6.2L12.2 3H17l-6.5 8L17 21h-4.9l-5.1-6.8V21H3z"/>\</svg>\</a>
-        \<a href="[https://instagram.com/spider\_gears\_br](https://instagram.com/spider_gears_br)" target="\_blank" rel="noopener" aria-label="Instagram">\<svg viewBox="0 0 24 24">\<path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>\</svg>\</a>
-      \</div>
-    \</div>
-  \</div>
-\</div>
-
-\<!-- 05 COMMUNITY -->
-\<div class="roster-group" id="community">
-  \<div class="group-head">
-    \<span class="group-index">05 //\</span>
-    \<span class="group-title">Embry Community\</span>
-    \<span class="group-tag">Community\</span>
-  \</div>
-  \<div class="card-grid">
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-    \<div class="empty-card">\<div class="plus">+\</div>\<span>Slot Reserved\</span>\</div>
-  \</div>
-\</div>
-
-</div>
+    <!-- 05 // COMMUNITY -->
+    <div class="roster-group" id="community">
+      <div class="group-head">
+        <span class="group-index">05 //</span>
+        <span class="group-title">Embry Community</span>
+        <span class="group-tag" data-i18n="roster.community.tag">Comunidade</span>
+      </div>
+      <div class="card-grid">
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+        <div class="empty-card"><div class="plus">+</div><span data-i18n="roster.slotReserved">Vaga Reservada</span></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============ CHANNELS ============ -->
 <section id="channels">
-<div class="container">
-<div class="sec-head">
-<h2>Our Channels</h2>
-<p>Acompanhe as jogadas, os bastidores e o canal oficial da organização.</p>
-</div>
-<div class="channels-grid">
-<div class="channel-card">
-<div class="bg-glow"></div>
-<span class="channel-tag">// CONTENT</span>
-<div class="channel-icon"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></div>
-<h3>CYBERZ</h3>
-<div class="sub">YouTube</div>
-<p>Conteúdo, gameplay, jogadas e montagens.</p>
-<a href="#" class="channel-link">Assistir agora →</a>
-</div>
-<div class="channel-card">
-<div class="bg-glow"></div>
-<span class="channel-tag">// OFFICIAL</span>
-<div class="channel-icon"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></div>
-<h3>EMBRYGOW</h3>
-<div class="sub">Official YouTube Channel</div>
-<p>O canal oficial da Embry.</p>
-<a href="https://youtube.com/@teamembrygow" target="_blank" rel="noopener" class="channel-link">Assistir agora →</a>
-</div>
-</div>
-
-\<div class="channel-player">
-  \<div class="player-head">
-    \<span class="eyebrow" style="margin-bottom:0;">EMBRYGOW // ÚLTIMOS VÍDEOS\</span>
-    \<a href="[https://youtube.com/@teamembrygow](https://youtube.com/@teamembrygow)" target="\_blank" rel="noopener" class="channel-link">Ver canal completo →\</a>
-  \</div>
-  \<div class="player-frame">
-    \<iframe
-      src="[https://www.youtube.com/embed/videoseries?list=UUfwsDP5PRVN7nyuDZ3vcxDQ](https://www.youtube.com/embed/videoseries?list=UUfwsDP5PRVN7nyuDZ3vcxDQ)"
-      title="EMBRYGOW - Últimos vídeos"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
-    \</iframe>
-  \</div>
-\</div>
-
-</div>
+  <div class="container">
+    <div class="sec-head">
+      <h2 data-i18n="channels.title">Nossos Canais</h2>
+      <p data-i18n="channels.sub">Acompanhe as jogadas, os bastidores e o canal oficial da organização.</p>
+    </div>
+    <div class="channels-grid">
+      <div class="channel-card">
+        <div class="bg-glow"></div>
+        <div class="channel-tag" data-i18n="channels.content">// CONTEÚDO</div>
+        <div class="channel-icon"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></div>
+        <h3>CYBERZ</h3>
+        <div class="sub" data-i18n="channels.cyberz.sub">Fundador &amp; Líder</div>
+        <p data-i18n="channels.cyberz.desc">
+          Cyberz — Uma história construída na comunidade de Gears. Antes de ser conhecido como Cyberz, havia a vontade de competir, evoluir e deixar sua marca em Gears.
+        </p>
+        <a href="#" class="channel-link" data-i18n="channels.watchNow">Assistir agora →</a>
+      </div>
+      <div class="channel-card">
+        <div class="bg-glow"></div>
+        <div class="channel-tag" data-i18n="channels.official">// OFICIAL</div>
+        <div class="channel-icon"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></div>
+        <h3>Team Embry</h3>
+        <div class="sub" data-i18n="channels.team.sub">Desde 2013</div>
+        <p data-i18n="channels.team.desc">
+          A Embry foi fundada em 04/07/2013, com a ideia de ser um pequeno grupo de amigos reunidos para jogar Gears of War e compartilhar a paixão pelo jogo.
+        </p>
+        <a href="#" class="channel-link" data-i18n="channels.watchNow">Assistir agora →</a>
+      </div>
+    </div>
+    <div style="margin-top:40px; text-align:center;">
+      <a href="https://youtube.com/@teamembrygow" target="_blank" class="btn btn-ghost" data-i18n="channels.viewAll">Ver canal completo →</a>
+    </div>
+  </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer>
-<div class="container">
-<div class="footer-top">
-<div class="footer-logo">
-<img src="assets/Embrylogo.png" alt="EMBRY">
-<div>
-<div class="txt">EMB<b>RY</b></div>
-<div class="footer-tag">EMBRY // GEARS COMMUNITY</div>
-</div>
-</div>
-<div class="footer-socials">
-<a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
-<a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
-<a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
-<a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
-<a href="#" aria-label="Discord"><svg viewBox="0 0 24 24"><path d="M20.3 4.7A19.9 19.9 0 0 0 15.4 3c-.2.4-.5 1-.6 1.4a18.3 18.3 0 0 0-5.6 0C9 4 8.7 3.4 8.5 3a19.9 19.9 0 0 0-4.9 1.7C1.3 8.9.7 13 1 17.1a20 20 0 0 0 5.7 2.7c.5-.6.9-1.3 1.2-2a12.9 12.9 0 0 1-1.9-.9l.5-.4a14.3 14.3 0 0 0 11 0l.5.4c-.6.3-1.2.6-1.9.9.3.7.7 1.4 1.2 2a20 20 0 0 0 5.7-2.7c.4-4.7-.7-8.8-2.7-12.4zM8.5 14.6c-.9 0-1.6-.8-1.6-1.8s.7-1.8 1.6-1.8 1.6.8 1.6 1.8-.7 1.8-1.6 1.8zm7 0c-.9 0-1.6-.8-1.6-1.8s.7-1.8 1.6-1.8 1.6.8 1.6 1.8-.7 1.8-1.6 1.8z"/></svg></a>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-motto"><b>GEARS.</b> COMMUNITY. LEGACY.</div>
-<div class="footer-copy">© 2026 EMBRY. ALL RIGHTS RESERVED.</div>
-</div>
-</div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="assets/Embrylogo.png" alt="EMBRY">
+        <div class="txt">EMBRY<b>//</b>GOW</div>
+      </div>
+      <div class="footer-tag" data-i18n="footer.tagline">GEARS. COMUNIDADE. LEGADO.</div>
+      <div class="footer-socials">
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
+        <a href="#" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-motto" data-i18n="footer.motto">GEARS. <b>COMMUNITY.</b> LEGACY.</div>
+      <div class="footer-copy">© 2026 EMBRY. ALL RIGHTS RESERVED.</div>
+    </div>
+  </div>
 </footer>
 
+<!-- ============ TRANSLATION SCRIPT ============ -->
 <script>
-// subtle reveal on scroll
-const groups = document.querySelectorAll('.roster-group, .channel-card, .sec-head');
-groups.forEach(el=>{ el.style.opacity=0; el.style.transform='translateY(24px)'; el.style.transition='opacity .7s ease, transform .7s ease'; });
-const io = new IntersectionObserver((entries)=>{
-entries.forEach(e=>{
-if(e.isIntersecting){
-e.target.style.opacity=1;
-e.target.style.transform='translateY(0)';
-io.unobserve(e.target);
+const translations = {
+  pt: {
+    "nav.origin": "Origem",
+    "nav.roster": "Roster",
+    "nav.channels": "Canais",
+    "nav.community": "Comunidade",
+    "nav.cta": "Ver Roster",
+    "hero.eyebrow": "Organização Brasileira de Gears of War",
+    "hero.title1": "NÓS SOMOS",
+    "hero.sub": "Organização brasileira de Gears of War. Competição, conteúdo e comunidade sob uma única bandeira — construída na linha de frente, jogo após jogo.",
+    "hero.btn1": "Ver Roster",
+    "hero.btn2": "Nossos Canais",
+    "hero.stat1": "Frentes",
+    "hero.stat2": "Unidades de Conteúdo",
+    "hero.stat3": "Mídia da Comunidade",
+    "hero.stat4": "Squad Fundador",
+    "origin.eyebrow": "EMBRY // ORIGEM",
+    "origin.title1": "O que significa",
+    "origin.p1": "O nome vem de <strong>Nassar Embry</strong>, o Allfather Prime que uniu a Coalizão em um dos momentos mais críticos da história de Sera. Seu legado deu origem à <strong>Embry Star</strong> — a mais alta honraria que um soldado da COG pode receber, concedida apenas para quem age com bravura muito além do que o dever exige.",
+    "origin.p2": "É esse o padrão que a organização carrega no nome: liderança, união e a exigência de ir além do esperado. Cada jogador, criador e membro da EMBRY representa esse mesmo compromisso — competir com a mentalidade de quem busca a mais alta honra, dentro e fora de campo.",
+    "origin.panelLabel": "// PALAVRAS-CHAVE",
+    "origin.tag1": "Nassar Embry",
+    "origin.tag2": "Embry Star",
+    "origin.tag3": "Honra",
+    "origin.tag4": "Liderança",
+    "origin.tag5": "União",
+    "origin.quote": "A mais alta honra pertence a quem vai além do dever.",
+    "roster.title": "O Roster",
+    "roster.sub": "Competição, highlights e comunidade. Conheça quem representa a EMBRY dentro e fora de campo.",
+    "roster.competitive.tag": "Competitivo",
+    "roster.mainLine": "Linha Principal",
+    "roster.primaryTeam": "Time Principal",
+    "roster.secondLine": "Linha Secundária",
+    "roster.compPlayers": "Jogadores Competitivos",
+    "roster.lineSlot": "Vaga na Linha",
+    "roster.playerSlot": "Vaga de Jogador",
+    "roster.highlights.tag": "Destaques",
+    "roster.highlights.desc": "Players que contribuem para o conteúdo oficial da EMBRY através de clips, highlights, plays e montages.",
+    "roster.highlightPlayer": "Jogador de Destaque",
+    "roster.production.tag": "Mídia & Editores",
+    "roster.slotReserved": "Vaga Reservada",
+    "roster.communityMedia.tag": "Comunicação",
+    "roster.communityMedia.role": "Mídia da Comunidade",
+    "roster.community.tag": "Comunidade",
+    "channels.title": "Nossos Canais",
+    "channels.sub": "Acompanhe as jogadas, os bastidores e o canal oficial da organização.",
+    "channels.content": "// CONTEÚDO",
+    "channels.official": "// OFICIAL",
+    "channels.cyberz.sub": "Fundador & Líder",
+    "channels.cyberz.desc": "Cyberz — Uma história construída na comunidade de Gears. Antes de ser conhecido como Cyberz, havia a vontade de competir, evoluir e deixar sua marca em Gears.",
+    "channels.team.sub": "Desde 2013",
+    "channels.team.desc": "A Embry foi fundada em 04/07/2013, com a ideia de ser um pequeno grupo de amigos reunidos para jogar Gears of War e compartilhar a paixão pelo jogo.",
+    "channels.watchNow": "Assistir agora →",
+    "channels.viewAll": "Ver canal completo →",
+    "footer.tagline": "GEARS. COMUNIDADE. LEGADO.",
+    "footer.motto": "GEARS. <b>COMUNIDADE.</b> LEGADO."
+  },
+  es: {
+    "nav.origin": "Origen",
+    "nav.roster": "Roster",
+    "nav.channels": "Canales",
+    "nav.community": "Comunidad",
+    "nav.cta": "Ver Roster",
+    "hero.eyebrow": "Organización Mexicana de Gears of War",
+    "hero.title1": "SOMOS",
+    "hero.sub": "Organización de Gears of War. Competición, contenido y comunidad bajo una sola bandera — construida en la línea de frente, juego tras juego.",
+    "hero.btn1": "Ver Roster",
+    "hero.btn2": "Nuestros Canales",
+    "hero.stat1": "Frentes",
+    "hero.stat2": "Unidades de Contenido",
+    "hero.stat3": "Medios de la Comunidad",
+    "hero.stat4": "Squad Fundador",
+    "origin.eyebrow": "EMBRY // ORIGEN",
+    "origin.title1": "Qué significa",
+    "origin.p1": "El nombre viene de <strong>Nassar Embry</strong>, el Allfather Prime que unió a la Coalición en uno de los momentos más críticos de la historia de Sera. Su legado dio origen a la <strong>Embry Star</strong> — el honor más alto que un soldado de la COG puede recibir, otorgado solo a quien actúa con valentía mucho más allá de lo que el deber exige.",
+    "origin.p2": "Ese es el estándar que la organización lleva en su nombre: liderazgo, unión y la exigencia de ir más allá de lo esperado. Cada jugador, creador y miembro de EMBRY representa ese mismo compromiso — competir con la mentalidad de quien busca el honor más alto, dentro y fuera del campo.",
+    "origin.panelLabel": "// PALABRAS CLAVE",
+    "origin.tag1": "Nassar Embry",
+    "origin.tag2": "Embry Star",
+    "origin.tag3": "Honor",
+    "origin.tag4": "Liderazgo",
+    "origin.tag5": "Unión",
+    "origin.quote": "El honor más alto pertenece a quien va más allá del deber.",
+    "roster.title": "El Roster",
+    "roster.sub": "Competición, highlights y comunidad. Conoce a quienes representan a EMBRY dentro y fuera del campo.",
+    "roster.competitive.tag": "Competitivo",
+    "roster.mainLine": "Línea Principal",
+    "roster.primaryTeam": "Equipo Principal",
+    "roster.secondLine": "Línea Secundaria",
+    "roster.compPlayers": "Jugadores Competitivos",
+    "roster.lineSlot": "Vacante en Línea",
+    "roster.playerSlot": "Vacante de Jugador",
+    "roster.highlights.tag": "Destacados",
+    "roster.highlights.desc": "Jugadores que contribuyen al contenido oficial de EMBRY a través de clips, highlights, plays y montages.",
+    "roster.highlightPlayer": "Jugador Destacado",
+    "roster.production.tag": "Medios & Editores",
+    "roster.slotReserved": "Vacante Reservada",
+    "roster.communityMedia.tag": "Comunicación",
+    "roster.communityMedia.role": "Medios de la Comunidad",
+    "roster.community.tag": "Comunidad",
+    "channels.title": "Nuestros Canales",
+    "channels.sub": "Sigue las jugadas, el detrás de cámaras y el canal oficial de la organización.",
+    "channels.content": "// CONTENIDO",
+    "channels.official": "// OFICIAL",
+    "channels.cyberz.sub": "Fundador & Líder",
+    "channels.cyberz.desc": "Cyberz — Una historia construida en la comunidad de Gears. Antes de ser conocido como Cyberz, había la voluntad de competir, evolucionar y dejar su marca en Gears.",
+    "channels.team.sub": "Desde 2013",
+    "channels.team.desc": "Embry fue fundada el 04/07/2013, con la idea de ser un pequeño grupo de amigos reunidos para jugar Gears of War y compartir la pasión por el juego.",
+    "channels.watchNow": "Ver ahora →",
+    "channels.viewAll": "Ver canal completo →",
+    "footer.tagline": "GEARS. COMUNIDAD. LEGADO.",
+    "footer.motto": "GEARS. <b>COMUNIDAD.</b> LEGADO."
+  },
+  en: {
+    "nav.origin": "Origin",
+    "nav.roster": "Roster",
+    "nav.channels": "Channels",
+    "nav.community": "Community",
+    "nav.cta": "View Roster",
+    "hero.eyebrow": "Brazilian Gears of War Organization",
+    "hero.title1": "WE ARE",
+    "hero.sub": "Brazilian Gears of War organization. Competition, content and community under a single banner — built on the front lines, game after game.",
+    "hero.btn1": "View Roster",
+    "hero.btn2": "Our Channels",
+    "hero.stat1": "Fronts",
+    "hero.stat2": "Content Units",
+    "hero.stat3": "Community Media",
+    "hero.stat4": "Founding Squad",
+    "origin.eyebrow": "EMBRY // ORIGIN",
+    "origin.title1": "What does",
+    "origin.p1": "The name comes from <strong>Nassar Embry</strong>, the Allfather Prime who united the Coalition in one of the most critical moments in Sera's history. His legacy gave rise to the <strong>Embry Star</strong> — the highest honor a COG soldier can receive, awarded only to those who act with bravery far beyond what duty demands.",
+    "origin.p2": "That is the standard the organization carries in its name: leadership, unity, and the demand to go beyond what is expected. Every player, creator, and member of EMBRY represents that same commitment — competing with the mindset of those who seek the highest honor, on and off the field.",
+    "origin.panelLabel": "// KEYWORDS",
+    "origin.tag1": "Nassar Embry",
+    "origin.tag2": "Embry Star",
+    "origin.tag3": "Honor",
+    "origin.tag4": "Leadership",
+    "origin.tag5": "Unity",
+    "origin.quote": "The highest honor belongs to those who go beyond duty.",
+    "roster.title": "The Roster",
+    "roster.sub": "Competition, highlights and community. Meet those who represent EMBRY on and off the field.",
+    "roster.competitive.tag": "Competitive",
+    "roster.mainLine": "Main Line",
+    "roster.primaryTeam": "Primary Team",
+    "roster.secondLine": "Second Line",
+    "roster.compPlayers": "Competitive Players",
+    "roster.lineSlot": "Line Slot",
+    "roster.playerSlot": "Player Slot",
+    "roster.highlights.tag": "Highlights",
+    "roster.highlights.desc": "Players who contribute to EMBRY's official content through clips, highlights, plays and montages.",
+    "roster.highlightPlayer": "Highlight Player",
+    "roster.production.tag": "Media & Editors",
+    "roster.slotReserved": "Slot Reserved",
+    "roster.communityMedia.tag": "Communication",
+    "roster.communityMedia.role": "Community Media",
+    "roster.community.tag": "Community",
+    "channels.title": "Our Channels",
+    "channels.sub": "Follow the plays, the behind the scenes and the official channel of the organization.",
+    "channels.content": "// CONTENT",
+    "channels.official": "// OFFICIAL",
+    "channels.cyberz.sub": "Founder & Leader",
+    "channels.cyberz.desc": "Cyberz — A story built in the Gears community. Before being known as Cyberz, there was the will to compete, evolve and leave his mark on Gears.",
+    "channels.team.sub": "Since 2013",
+    "channels.team.desc": "Embry was founded on 04/07/2013, with the idea of being a small group of friends gathered to play Gears of War and share the passion for the game.",
+    "channels.watchNow": "Watch now →",
+    "channels.viewAll": "View full channel →",
+    "footer.tagline": "GEARS. COMMUNITY. LEGACY.",
+    "footer.motto": "GEARS. <b>COMMUNITY.</b> LEGACY."
+  }
+};
+
+// Aplica o idioma
+function setLanguage(lang) {
+  const dict = translations[lang] || translations.pt;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      // Suporta HTML interno (ex: <strong>, <b>)
+      if (dict[key].includes('<')) {
+        el.innerHTML = dict[key];
+      } else {
+        el.textContent = dict[key];
+      }
+    }
+  });
+  // Atualiza o lang do <html>
+  const langMap = { pt: 'pt-BR', es: 'es-MX', en: 'en-US' };
+  document.documentElement.lang = langMap[lang] || 'pt-BR';
+  // Atualiza botão ativo
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+  // Salva preferência
+  localStorage.setItem('embry-lang', lang);
 }
+
+// Inicializa
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('embry-lang') || 'pt';
+  setLanguage(saved);
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+  });
 });
-}, {threshold:0.12});
-groups.forEach(el=>io.observe(el));
 </script>
 
 </body>
