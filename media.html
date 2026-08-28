@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÍDIA // EMBRY GOW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grain"></div>
+    <div class="scanline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-glass fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="https://embrygow-commits.github.io/teambry/assets/Embrylogo.png" alt="EMBRY" class="w-10 h-10">
+                    <span class="font-esports text-2xl font-black">EMBRY<b style="color: var(--red-primary)">//</b>GOW</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="index.html" class="hover:text-red-500 transition-colors font-bold tracking-wider text-sm">HOME</a>
+                    <a href="roster.html" class="hover:text-red-500 transition-colors font-bold tracking-wider text-sm">ROSTER</a>
+                    <a href="media.html" class="text-red-500 font-bold tracking-wider text-sm">MÍDIA</a>
+                    <a href="community.html" class="hover:text-red-500 transition-colors font-bold tracking-wider text-sm">COMUNIDADE</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:flex gap-2">
+                        <button class="lang-btn active text-xs" data-lang="pt">🇧🇷 PT</button>
+                        <button class="lang-btn text-xs" data-lang="es">🇲🇽 ES</button>
+                        <button class="lang-btn text-xs" data-lang="en">🇺🇸 EN</button>
+                    </div>
+                    <a href="roster.html" class="btn-primary px-6 py-2 hidden sm:block text-sm">VER ROSTER</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Media Section -->
+    <section class="py-32 bg-black fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-esports text-4xl md:text-6xl font-black mb-4 section-header" data-i18n="channels.title">MÍDIA & CONTEÚDO</h2>
+                <p class="text-gray-400 text-xl max-w-3xl mx-auto" data-i18n="channels.sub">Acompanhe as jogadas, os bastidores e o canal oficial.</p>
+            </div>
+
+            <!-- Play of the Week -->
+            <div class="mb-20">
+                <div class="group-head">
+                    <span class="group-index">DESTAQUE //</span>
+                    <span class="group-title">Play da Semana</span>
+                </div>
+                <div class="play-card">
+                    <div class="play-video-container">
+                        <span class="play-badge">🔥 PLAY DA SEMANA</span>
+                        <!-- SUBSTITUA O LINK DO YOUTUBE AQUI -->
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Play of the Week" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-red-700 text-white text-xs font-bold tracking-wider">SEMANA 35 • 2026</span>
+                            <span class="text-gray-500 text-sm">por iCyberz</span>
+                        </div>
+                        <h3 class="font-esports text-2xl font-black mb-2">LANCE INSANO NA FINAL</h3>
+                        <p class="text-gray-400">Triple kill com Lancer no último segundo que garantiu a vitória. Edição e narração por iCyberz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canais Oficiais -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="channel-card p-8">
+                    <div class="channel-tag" data-i18n="channels.content">// CONTEÚDO</div>
+                    <div class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
+                    </div>
+                    <h3 class="text-3xl font-black mb-2">CYBERZ</h3>
+                    <div class="text-red-500 font-bold mb-4" data-i18n="channels.cyberz.sub">Fundador & Líder</div>
+                    <p class="text-gray-400 mb-4" data-i18n="channels.cyberz.desc">Uma história construída na comunidade de Gears. Vontade de competir, evoluir e deixar sua marca.</p>
+                    <a href="#" class="channel-link" data-i18n="channels.watchNow">Assistir agora →</a>
+                </div>
+                
+                <div class="channel-card p-8">
+                    <div class="channel-tag" data-i18n="channels.official">// OFICIAL</div>
+                    <div class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
+                    </div>
+                    <h3 class="text-3xl font-black mb-2">Team Embry</h3>
+                    <div class="text-red-500 font-bold mb-4" data-i18n="channels.team.sub">Desde 2013</div>
+                    <p class="text-gray-400 mb-4" data-i18n="channels.team.desc">Fundada em 04/07/2013, com a ideia de ser um pequeno grupo de amigos reunidos para jogar Gears of War.</p>
+                    <a href="#" class="channel-link" data-i18n="channels.watchNow">Assistir agora →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <div class="footer-logo flex items-center gap-3">
+                    <img src="https://embrygow-commits.github.io/teambry/assets/Embrylogo.png" alt="EMBRY">
+                    <div class="txt">EMBRY<b>//</b>GOW</div>
+                </div>
+                <div class="text-red-500 font-black tracking-widest text-lg" data-i18n="footer.tagline">GEARS. COMUNIDADE. LEGADO.</div>
+                <div class="flex gap-4">
+                    <a href="#" class="social-link"><svg class="social-icon" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
+                    <a href="#" class="social-link"><svg class="social-icon" viewBox="0 0 24 24"><path d="M4 2 2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12-3 3h-4l-2 2v-2H6V4h14v10z"/><path d="M15 7h2v5h-2zM10 7h2v5h-2z"/></svg></a>
+                    <a href="#" class="social-link"><svg class="social-icon" viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47a4.9 4.9 0 0 1 1.77 1.15c.55.55.9 1.1 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77c-.55.55-1.1.9-1.77 1.15-.63.25-1.36.42-2.42.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-.63-.25-1.36-.42-1.77-1.15a4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.28 2 12 2z"/></svg></a>
+                </div>
+            </div>
+            <div class="border-t-2 border-red-900 pt-8 text-center">
+                <div class="text-2xl font-esports font-black mb-2" data-i18n="footer.motto">GEARS. <b style="color: var(--red-primary)">COMUNIDADE.</b> LEGADO.</div>
+                <div class="text-gray-600 text-sm">© 2026 EMBRY. ALL RIGHTS RESERVED.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
